@@ -60,7 +60,7 @@ plt.show()
 
 # 参数dataset：train：num_workers改为12
 
-# 参数dataset：train：batch_size改为48    我在本案例中选用 6，太大了会导致内存溢出，系统奔溃。
+# 参数dataset：train：batch_size改为48    我在本案例中选用 4，太大了会导致内存溢出，系统奔溃。
 
 # 参数dataset：train：gt_folder改为data/animeSR/train
 
@@ -92,4 +92,4 @@ plt.show()
 
 #################################### 自己的代码 ###########################
 %cd /home/aistudio/PaddleGAN/
-!python tools/main.py --config-file configs/lesrcnn_psnr_x4_div2k.yaml --evaluate-only --load /home/aistudio/pretrained_model/ESRGAN_PSNR_50000_weight.pdparams
+!python tools/main.py --config-file configs/lesrcnn_psnr_x4_div2k.yaml --evaluate-only --load /home/aistudio/pretrained_model/iter_25000_weight.pdparams
