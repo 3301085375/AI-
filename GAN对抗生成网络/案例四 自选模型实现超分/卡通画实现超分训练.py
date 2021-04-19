@@ -56,11 +56,11 @@ plt.show()
 
 # 以ESRGAN为例，这里将将配置文件esrgan_psnr_x4_div2k.yaml中的
 
-# 参数total_iters改为50000      我在本案例中选用25000
+# 参数total_iters改为50000      我在本案例中选用30000
 
 # 参数dataset：train：num_workers改为12
 
-# 参数dataset：train：batch_size改为48    我在本案例中选用 12，太大了会导致内存溢出，系统奔溃。
+# 参数dataset：train：batch_size改为48    我在本案例中选用 6，太大了会导致内存溢出，系统奔溃。
 
 # 参数dataset：train：gt_folder改为data/animeSR/train
 
