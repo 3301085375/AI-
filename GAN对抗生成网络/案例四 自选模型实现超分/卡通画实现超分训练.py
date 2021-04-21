@@ -56,11 +56,11 @@ plt.show()
 
 # 以ESRGAN为例，这里将将配置文件esrgan_psnr_x4_div2k.yaml中的
 
-# 参数total_iters改为50000      我在本案例中选用30000
+# 参数total_iters改为50000      我在本案例中选用50000
 
-# 参数dataset：train：num_workers改为12
+# 参数dataset：train：num_workers改为12    本案例用的是 4
 
-# 参数dataset：train：batch_size改为48    我在本案例中选用 4，太大了会导致内存溢出，系统奔溃。
+# 参数dataset：train：batch_size改为48    我在本案例中选用 8，太大了会导致内存溢出，系统奔溃。
 
 # 参数dataset：train：gt_folder改为data/animeSR/train
 
@@ -92,4 +92,4 @@ plt.show()
 
 #################################### 自己的代码 ###########################
 %cd /home/aistudio/PaddleGAN/
-!python tools/main.py --config-file configs/lesrcnn_psnr_x4_div2k.yaml --evaluate-only --load /home/aistudio/pretrained_model/iter_25000_weight.pdparams
+!python tools/main.py --config-file configs/lesrcnn_psnr_x4_div2k.yaml --evaluate-only --load /home/aistudio/pretrained_model/iter_50000_weight.pdparams
